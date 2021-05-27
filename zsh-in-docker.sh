@@ -76,6 +76,7 @@ install_dependencies() {
         *)
             $Sudo apt-get update
             $Sudo apt-get -y install git curl zsh locales
+            $Sudo apt-get install fonts-powerline
             if [ "$VERSION" != "14.04" ]; then
                 $Sudo apt-get -y install locales-all
             fi
